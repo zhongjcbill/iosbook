@@ -4,22 +4,22 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>简介 | My Book</title>
+        <title>IOS 面试宝典 | My Book</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="Welcome in my book!">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
-        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
     
     
     
-    <link rel="next" href="./ios_ui/README.html" />
     
+    <link rel="prev" href="../oc/对象的存储细节.html" />
     
 
         
@@ -27,11 +27,11 @@
     <body>
         
         
-<link rel="stylesheet" href="gitbook/style.css">
+<link rel="stylesheet" href="../gitbook/style.css">
 
 
         
-    <div class="book"  data-level="0" data-basepath="." data-revision="1472080048459">
+    <div class="book"  data-level="4" data-basepath=".." data-revision="1472080048459">
     
 
 <div class="book-summary">
@@ -49,10 +49,10 @@
         
     
         
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
-                    <a href="./index.html">
+                    <a href="../index.html">
                         <i class="fa fa-check"></i>
                         
                          简介
@@ -66,7 +66,7 @@
         <li class="chapter " data-level="1" data-path="ios_ui/README.html">
             
                 
-                    <a href="./ios_ui/README.html">
+                    <a href="../ios_ui/README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>1.</b>
@@ -82,7 +82,7 @@
         <li class="chapter " data-level="2" data-path="ios_code/README.html">
             
                 
-                    <a href="./ios_code/README.html">
+                    <a href="../ios_code/README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.</b>
@@ -98,7 +98,7 @@
         <li class="chapter " data-level="3" data-path="oc/README.html">
             
                 
-                    <a href="./oc/README.html">
+                    <a href="../oc/README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.</b>
@@ -115,7 +115,7 @@
         <li class="chapter " data-level="3.1" data-path="oc/函数.html">
             
                 
-                    <a href="./oc/函数.html">
+                    <a href="../oc/函数.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.</b>
@@ -131,7 +131,7 @@
         <li class="chapter " data-level="3.2" data-path="oc/对象方法的声明和实现.html">
             
                 
-                    <a href="./oc/对象方法的声明和实现.html">
+                    <a href="../oc/对象方法的声明和实现.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.2.</b>
@@ -147,7 +147,7 @@
         <li class="chapter " data-level="3.3" data-path="oc/对象的存储细节.html">
             
                 
-                    <a href="./oc/对象的存储细节.html">
+                    <a href="../oc/对象的存储细节.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.3.</b>
@@ -165,10 +165,10 @@
         </li>
     
         
-        <li class="chapter " data-level="4" data-path="ios_interview/ios_面试题.html">
+        <li class="chapter active" data-level="4" data-path="ios_interview/ios_面试题.html">
             
                 
-                    <a href="./ios_interview/ios_面试题.html">
+                    <a href="../ios_interview/ios_面试题.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.</b>
@@ -261,7 +261,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="./" >My Book</a>
+        <a href="../" >My Book</a>
     </h1>
 </div>
 
@@ -269,10 +269,17 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_176">
+                    <section class="normal" id="section-gitbook_178">
                     
-                        <h1 id="my-book">My Book</h1>
-<p>Welcome in my book!</p>
+                        <h2 id="ios-">IOS 面试题</h2>
+<h2 id="2isa">2.isa指针</h2>
+<ul>
+<li>每一个对象都包含一个isa指针.这个指针指向当前对象所属的类。</li>
+<li>[p eat];表示给p所指向的对象发送一条eat消息,调用对象的eat方法,此时对象会顺着内部的isa指针找到存 储于类中的方法,执行。</li>
+<li>isa是对象中的隐藏指针,指向创建这个对象的类。</li>
+<li>通过isa指针我们可以在运行的时候知道当前对象是属于那个Class（类）的
+<img src="../images/oc/isazz.png" alt=""></li>
+</ul>
 
                     
                     </section>
@@ -283,21 +290,21 @@
         </div>
 
         
+        <a href="../oc/对象的存储细节.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: OC 对象的存储细节"><i class="fa fa-angle-left"></i></a>
         
-        <a href="./ios_ui/README.html" class="navigation navigation-next navigation-unique" aria-label="Next page: IOS UI"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-<script src="gitbook/app.js"></script>
+<script src="../gitbook/app.js"></script>
 
     
     <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
     
-    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
     
 
 <script>

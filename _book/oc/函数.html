@@ -4,22 +4,24 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>简介 | My Book</title>
+        <title>OC 函数 | My Book</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="Welcome in my book!">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
-        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
     
     
     
-    <link rel="next" href="./ios_ui/README.html" />
+    <link rel="next" href="../oc/对象方法的声明和实现.html" />
     
+    
+    <link rel="prev" href="../oc/README.html" />
     
 
         
@@ -27,11 +29,11 @@
     <body>
         
         
-<link rel="stylesheet" href="gitbook/style.css">
+<link rel="stylesheet" href="../gitbook/style.css">
 
 
         
-    <div class="book"  data-level="0" data-basepath="." data-revision="1472080048459">
+    <div class="book"  data-level="3.1" data-basepath=".." data-revision="1472080048459">
     
 
 <div class="book-summary">
@@ -49,10 +51,10 @@
         
     
         
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
-                    <a href="./index.html">
+                    <a href="../index.html">
                         <i class="fa fa-check"></i>
                         
                          简介
@@ -66,7 +68,7 @@
         <li class="chapter " data-level="1" data-path="ios_ui/README.html">
             
                 
-                    <a href="./ios_ui/README.html">
+                    <a href="../ios_ui/README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>1.</b>
@@ -82,7 +84,7 @@
         <li class="chapter " data-level="2" data-path="ios_code/README.html">
             
                 
-                    <a href="./ios_code/README.html">
+                    <a href="../ios_code/README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.</b>
@@ -98,7 +100,7 @@
         <li class="chapter " data-level="3" data-path="oc/README.html">
             
                 
-                    <a href="./oc/README.html">
+                    <a href="../oc/README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.</b>
@@ -112,10 +114,10 @@
                 
     
         
-        <li class="chapter " data-level="3.1" data-path="oc/函数.html">
+        <li class="chapter active" data-level="3.1" data-path="oc/函数.html">
             
                 
-                    <a href="./oc/函数.html">
+                    <a href="../oc/函数.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.1.</b>
@@ -131,7 +133,7 @@
         <li class="chapter " data-level="3.2" data-path="oc/对象方法的声明和实现.html">
             
                 
-                    <a href="./oc/对象方法的声明和实现.html">
+                    <a href="../oc/对象方法的声明和实现.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.2.</b>
@@ -147,7 +149,7 @@
         <li class="chapter " data-level="3.3" data-path="oc/对象的存储细节.html">
             
                 
-                    <a href="./oc/对象的存储细节.html">
+                    <a href="../oc/对象的存储细节.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.3.</b>
@@ -168,7 +170,7 @@
         <li class="chapter " data-level="4" data-path="ios_interview/ios_面试题.html">
             
                 
-                    <a href="./ios_interview/ios_面试题.html">
+                    <a href="../ios_interview/ios_面试题.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.</b>
@@ -261,7 +263,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="./" >My Book</a>
+        <a href="../" >My Book</a>
     </h1>
 </div>
 
@@ -269,10 +271,84 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_176">
+                    <section class="normal" id="section-gitbook_181">
                     
-                        <h1 id="my-book">My Book</h1>
-<p>Welcome in my book!</p>
+                        <h1 id="oc-">OC 函数</h1>
+<h1 id="oc">第一个OC类</h1>
+<h2 id="">本小节知识点</h2>
+<ol>
+<li>如何声明一个类</li>
+<li>如何实现一个类</li>
+<li>如何创建一个对象</li>
+<li>对象的注意点</li>
+</ol>
+<hr>
+<h2 id="1">1.如何声明一个类</h2>
+<ul>
+<li><p>格式
+<img src="../images/oc/smygl.png" alt=""></p>
+</li>
+<li><p>注意：</p>
+<ul>
+<li>1.必须以@interface开头，@end结尾</li>
+<li>2.成员变量的声明，必须写在@interface与@end之间的大括号中</li>
+<li>3.方法的声明必须在{}下面，不能写在{}中</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="2">2.如何实现一个类</h2>
+<ul>
+<li>格式</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">MyClass</span></span>
+
+- (<span class="hljs-keyword">id</span>)initWithString:(<span class="hljs-built_in">NSString</span> *)aName
+{
+    <span class="hljs-comment">//写代码处</span>
+}
+
++ (MyClass *)myClassWithString:(<span class="hljs-built_in">NSString</span> *)aName
+{
+    <span class="hljs-comment">//写代码处</span>
+}
+
+<span class="hljs-keyword">@end</span>
+</code></pre>
+<ul>
+<li>注意：<ul>
+<li>1.必须以@implementation开头，@end结尾</li>
+<li>2.类名必须和声明的一致</li>
+</ul>
+</li>
+</ul>
+<h2 id="3">3.如何创建一个对象</h2>
+<ul>
+<li>用类的方式告诉计算机，我们需要一个什么样的对象，之后我们要在程序中使用这个对象，就必须先创建一个对象</li>
+</ul>
+<p><img src="../images/oc/cjygl.png" alt=""></p>
+<ul>
+<li><p>注意[Car new];做了三件事</p>
+<ul>
+<li>1.在堆内存中开辟了一块新的存储空间</li>
+<li>2.初始化成员变量(写在类声明大括号中的属性就叫成员变量,也叫实例变量)</li>
+<li>3.返回指针地址</li>
+</ul>
+</li>
+<li><p>消息机制</p>
+<ul>
+<li>使用对象调用方法就是OC中的消息机制</li>
+<li>OC中调用方法的格式：[类名或者对象名 方法名];
+<img src="../images/oc/xxjz.png" alt=""></li>
+</ul>
+</li>
+</ul>
+<h2 id="4">4.对象的注意点</h2>
+<ul>
+<li>可以通过 对象-&gt;对象成员(注意声明属性为:@public) 的方式访问对象中的成员,</li>
+<li>每一个对象中都有一份属于自己的属性。</li>
+<li>对其中一个对象的成员进行了修改。和另一个对象没有关系</li>
+</ul>
 
                     
                     </section>
@@ -283,21 +359,23 @@
         </div>
 
         
+        <a href="../oc/README.html" class="navigation navigation-prev " aria-label="Previous page: OC 语法"><i class="fa fa-angle-left"></i></a>
         
-        <a href="./ios_ui/README.html" class="navigation navigation-next navigation-unique" aria-label="Next page: IOS UI"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="../oc/对象方法的声明和实现.html" class="navigation navigation-next " aria-label="Next page: OC 对象方法的声明和实现"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-<script src="gitbook/app.js"></script>
+<script src="../gitbook/app.js"></script>
 
     
     <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
     
-    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
     
 
 <script>
