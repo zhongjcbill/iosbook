@@ -9,11 +9,11 @@
 - 转变为非ARC -fno-objc-arc
 - 转变为ARC的, -f-objc-arc (不常用)
 
-![](../images/a6/Snip20150625_5.png)
+![](../../images/oc/Snip20150625_5.png)
 
 ---
 
 ##2.如何将MRC转换为ARC
 
-![](../images/a6/Snip20150625_7.png)
+![](../../images/oc/Snip20150625_7.png)
 ---
