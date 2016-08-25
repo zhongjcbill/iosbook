@@ -3,6 +3,11 @@
 * [简介](README.md)
 * [IOS UI](ios_ui/README.md)
 * [IOS 编程](ios_code/README.md)
+   * [Self关键字](ios_code/self.md)
+   * [继承相关特性](ios_code/继承相关特性.md)
+   * [Super关键字](ios_code/Super关键字.md)
+   * [多态的实现](ios_code/多态的实现.md)
+   * [实例变量修饰符](ios_code/实例变量修饰符.md)
 * [OC 语法](oc/README.md)
    * [OC 函数](oc/函数.md)
    * [OC 对象方法的声明和实现](oc/对象方法的声明和实现.md)
@@ -11,6 +16,6 @@
 * [IOS Xcode](Xcode/Xcode.md)
    * [Xcode模板修改](Xcode/Xcode模板修改.md)
    * [Xcode文档安装](Xcode/xcode文档安装.md)
+   * [Xcode自定义代码段](Xcode/自定义代码段.md)
 * [IOS 面试宝典](ios_interview/ios_面试题.md)
-
 
