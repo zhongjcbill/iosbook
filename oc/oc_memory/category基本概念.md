@@ -45,7 +45,7 @@ NewMethod
 
 - 使用Xcode创建分类
 
-![](../images/a7/Snip20150625_8.png)
+![](../../images/oc/Snip20150625_8.png)
 
-![](../images/a7/Snip20150625_9.png)
+![](../../images/oc/Snip20150625_9.png)
 ---
