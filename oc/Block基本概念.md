@@ -30,7 +30,7 @@
 };
 ```
 
-![](../images/a10/Snip20150625_11.png)
+![](../images/oc/Snip20150625_11.png)
 
 - block最简单形式
 
