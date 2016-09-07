@@ -75,3 +75,18 @@
         tabBar.addSubview(composeBtn)
     }
 ```
+
+##如果监听事件，要加@objc
+```swift
+// MARK:- 时间监听
+extension BaseViewController{
+
+    @objc private func registerBtnClicl(){
+        print("registerBtnClicl")
+    }
+
+     @objc private func loginBtnClick(){
+          print("registerBtnClicl")
+    }
+}
+```
