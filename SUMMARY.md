@@ -121,6 +121,7 @@
    * [Xcode 真机调试](Xcode/真机调试.md)
    * [Xcode Xcode7调试](Xcode/Xcode7调试.md)
    * [Xcode 测试打包](Xcode/测试打包.md)
+   * [Xcode App发布](Xcode/App发布.md)
 * [IOS 开发注意](ios_attention/ios开发注意点.md)
    * [@property内存管理策略选择](ios_attention/property内存管理策略选择.md)
 * [IOS 面试宝典](ios_interview/ios_面试题.md)
