@@ -111,12 +111,14 @@ PS:CocoaPods教程（http://code4app.com/article/cocoapods-install-usage）
     RACSignal *siganl = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
 
         // block调用时刻：每当有订阅者订阅信号，就会调用block。
+        //如果订阅者一直都在，就不会去取消订阅
+         self.subscriber = subscriber;
 
         // 2.发送信号
         [subscriber sendNext:@1];
 
         // 如果不在发送数据，最好发送信号完成，内部会自动调用[RACDisposable disposable]取消订阅信号。
-        [subscriber sendCompleted];
+        //[subscriber sendCompleted];
 
         return [RACDisposable disposableWithBlock:^{
 
@@ -130,10 +132,13 @@ PS:CocoaPods教程（http://code4app.com/article/cocoapods-install-usage）
     }];
 
     // 3.订阅信号,才会激活信号.
-    [siganl subscribeNext:^(id x) {
+     RACDisposable *disposable = [ siganl subscribeNext:^(id x) {
         // block调用时刻：每当有信号发出数据，就会调用block.
         NSLog(@"接收到数据:%@",x);
     }];
+
+    //手动取消订阅
+    [disposable dispose];
 
 ```
 
@@ -184,7 +189,7 @@ PS:CocoaPods教程（http://code4app.com/article/cocoapods-install-usage）
 
 
     // RACReplaySubject使用步骤:
-    // 1.创建信号 [RACSubject subject]，跟RACSiganl不一样，创建信号时没有block。
+    // 1.创建信号 [RACReplaySubject subject]，跟RACSiganl不一样，创建信号时没有block。
     // 2.可以先订阅信号，也可以先发送信号。
     // 2.1 订阅信号 - (RACDisposable *)subscribeNext:(void (^)(id x))nextBlock
     // 2.2 发送信号 sendNext:(id)value

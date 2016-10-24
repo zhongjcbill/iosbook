@@ -1,0 +1,2743 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>IOS (1)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶 | My Book</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../ios_code/ii_reactivecocoa_racff09_bian_cheng_si_xiang_he_mv.html" />
+    
+    
+    <link rel="prev" href="../ios_code/Runtime.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="2.2" data-basepath=".." data-revision="1474411352609">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         简介
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="ios_ui/README.html">
+            
+                
+                    <a href="../ios_ui/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         IOS UI
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="ios_ui/UICollectionView.html">
+            
+                
+                    <a href="../ios_ui/UICollectionView.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         UICollectionView
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="ios_ui/UIcollection实现九宫格.html">
+            
+                
+                    <a href="../ios_ui/UIcollection实现九宫格.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         UICollectionView实现九宫格
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="ios_ui/广告的实现.html">
+            
+                
+                    <a href="../ios_ui/广告的实现.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         广告的实现
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="ios_code/README.html">
+            
+                
+                    <a href="../ios_code/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         IOS 编程
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="ios_code/Runtime.html">
+            
+                
+                    <a href="../ios_code/Runtime.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         IOS Runtime
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="2.2" data-path="ios_code/i_reactivecocoa_racff09_bian_cheng_si_xiang_he_mvv.html">
+            
+                
+                    <a href="../ios_code/i_reactivecocoa_racff09_bian_cheng_si_xiang_he_mvv.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         IOS (1)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="ios_code/ii_reactivecocoa_racff09_bian_cheng_si_xiang_he_mv.html">
+            
+                
+                    <a href="../ios_code/ii_reactivecocoa_racff09_bian_cheng_si_xiang_he_mv.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         IOS (2)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="ios_code/iii_reactivecocoa_racff09_bian_cheng_si_xiang_he_m.html">
+            
+                
+                    <a href="../ios_code/iii_reactivecocoa_racff09_bian_cheng_si_xiang_he_m.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         IOS (3)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="ios_code/iv_reactivecocoa_racff09_bian_cheng_si_xiang_he_mv.html">
+            
+                
+                    <a href="../ios_code/iv_reactivecocoa_racff09_bian_cheng_si_xiang_he_mv.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         IOS (4)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.6" data-path="ios_code/v_reactivecocoaracff09_bian_cheng_si_xiang_he_mvvm.html">
+            
+                
+                    <a href="../ios_code/v_reactivecocoaracff09_bian_cheng_si_xiang_he_mvvm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                         IOS (5) ReactiveCocoa（RAC）编程思想和MVVM架构进阶
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="oc/README.html">
+            
+                
+                    <a href="../oc/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         OC 语法
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="oc/函数.html">
+            
+                
+                    <a href="../oc/函数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         OC 函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="oc/对象方法的声明和实现.html">
+            
+                
+                    <a href="../oc/对象方法的声明和实现.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         OC 对象方法的声明和实现
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.3" data-path="oc/对象的存储细节.html">
+            
+                
+                    <a href="../oc/对象的存储细节.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                         OC 对象的存储细节
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4" data-path="oc/NSString类介绍及用法.html">
+            
+                
+                    <a href="../oc/NSString类介绍及用法.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         OC NSString类介绍及用法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.5" data-path="oc/self.html">
+            
+                
+                    <a href="../oc/self.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                         Self关键字
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.6" data-path="oc/继承相关特性.html">
+            
+                
+                    <a href="../oc/继承相关特性.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                         继承相关特性
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.7" data-path="oc/Super关键字.html">
+            
+                
+                    <a href="../oc/Super关键字.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                         Super关键字
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.8" data-path="oc/多态的实现.html">
+            
+                
+                    <a href="../oc/多态的实现.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                         多态的实现
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.9" data-path="oc/实例变量修饰符.html">
+            
+                
+                    <a href="../oc/实例变量修饰符.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                         实例变量修饰符
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.10" data-path="oc/oc_memory/@property参数.html">
+            
+                
+                    <a href="../oc/oc_memory/@property参数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                         OC @property参数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.11" data-path="oc/oc_memory/@class.html">
+            
+                
+                    <a href="../oc/oc_memory/@class.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.11.</b>
+                        
+                         OC @class
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.12" data-path="oc/id类型.html">
+            
+                
+                    <a href="../oc/id类型.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.12.</b>
+                        
+                         OC id类型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.13" data-path="oc/构造方法.html">
+            
+                
+                    <a href="../oc/构造方法.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.13.</b>
+                        
+                         OC 构造方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.14" data-path="oc/类的启动过程.html">
+            
+                
+                    <a href="../oc/类的启动过程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.14.</b>
+                        
+                         OC 类的启动过程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.15" data-path="oc/常见的结构体.html">
+            
+                
+                    <a href="../oc/常见的结构体.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.15.</b>
+                        
+                         OC 常见的结构体
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.16" data-path="oc/Foundation框架介绍.html">
+            
+                
+                    <a href="../oc/Foundation框架介绍.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.16.</b>
+                        
+                         OC Foundation框架介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.17" data-path="oc/字符串比较.html">
+            
+                
+                    <a href="../oc/字符串比较.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.17.</b>
+                        
+                         OC 字符串比较
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.18" data-path="oc/字符串读写.html">
+            
+                
+                    <a href="../oc/字符串读写.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.18.</b>
+                        
+                         OC 字符串读写
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.19" data-path="oc/字符串截取.html">
+            
+                
+                    <a href="../oc/字符串截取.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.19.</b>
+                        
+                         OC 字符串截取
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.20" data-path="oc/字符串搜索.html">
+            
+                
+                    <a href="../oc/字符串搜索.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.20.</b>
+                        
+                         OC 字符串搜索
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.21" data-path="oc/字符串替换.html">
+            
+                
+                    <a href="../oc/字符串替换.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.21.</b>
+                        
+                         OC 字符串替换
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.22" data-path="oc/字符串与基本数据类型转换.html">
+            
+                
+                    <a href="../oc/字符串与基本数据类型转换.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.22.</b>
+                        
+                         OC 字符串与基本数据类型转换
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.23" data-path="oc/字符串与路径.html">
+            
+                
+                    <a href="../oc/字符串与路径.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.23.</b>
+                        
+                         OC 字符串与路径
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.24" data-path="oc/NSArray基本概念.html">
+            
+                
+                    <a href="../oc/NSArray基本概念.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.24.</b>
+                        
+                         OC NSArray基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.25" data-path="oc/NSArray遍历.html">
+            
+                
+                    <a href="../oc/NSArray遍历.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.25.</b>
+                        
+                         OC NSArray遍历
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.26" data-path="oc/NSArray排序.html">
+            
+                
+                    <a href="../oc/NSArray排序.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.26.</b>
+                        
+                         OC NSArray排序
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.27" data-path="oc/NSArray文件读写.html">
+            
+                
+                    <a href="../oc/NSArray文件读写.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.27.</b>
+                        
+                         OC NSArray文件读写
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.28" data-path="oc/NSArray与字符串.html">
+            
+                
+                    <a href="../oc/NSArray与字符串.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.28.</b>
+                        
+                         OC NSArray与字符串
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.29" data-path="oc/NSMutableArray基本概念.html">
+            
+                
+                    <a href="../oc/NSMutableArray基本概念.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.29.</b>
+                        
+                         OC NSMutableArray基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.30" data-path="oc/NSString基本概念.html">
+            
+                
+                    <a href="../oc/NSString基本概念.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.30.</b>
+                        
+                         OC NSString基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.31" data-path="oc/NSMutableString练习.html">
+            
+                
+                    <a href="../oc/NSMutableString练习.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.31.</b>
+                        
+                         OC NSMutableString练习
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.32" data-path="oc/NSMutableString基本概念.html">
+            
+                
+                    <a href="../oc/NSMutableString基本概念.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.32.</b>
+                        
+                         OC NSMutableString基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.33" data-path="oc/NSMutableString常用方法.html">
+            
+                
+                    <a href="../oc/NSMutableString常用方法.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.33.</b>
+                        
+                         OC NSMutableString常用方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.34" data-path="oc/NSDictionary基本概念.html">
+            
+                
+                    <a href="../oc/NSDictionary基本概念.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.34.</b>
+                        
+                         OC NSDictionary基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.35" data-path="oc/NSMutableDictionary基本概念.html">
+            
+                
+                    <a href="../oc/NSMutableDictionary基本概念.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.35.</b>
+                        
+                         OC NSMutableDictionary基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.36" data-path="oc/NSNumber.html">
+            
+                
+                    <a href="../oc/NSNumber.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.36.</b>
+                        
+                         OC NSNumber基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.37" data-path="oc/NSValue.html">
+            
+                
+                    <a href="../oc/NSValue.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.37.</b>
+                        
+                         OC NSValue基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.38" data-path="oc/NSDate基本概念.html">
+            
+                
+                    <a href="../oc/NSDate基本概念.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.38.</b>
+                        
+                         OC NSDate基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.39" data-path="oc/NSFileManager介绍.html">
+            
+                
+                    <a href="../oc/NSFileManager介绍.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.39.</b>
+                        
+                         OC NSFileManager介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.40" data-path="oc/集合对象的内存管理.html">
+            
+                
+                    <a href="../oc/集合对象的内存管理.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.40.</b>
+                        
+                         OC 集合对象的内存管理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.41" data-path="oc/Copy.html">
+            
+                
+                    <a href="../oc/Copy.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.41.</b>
+                        
+                         OC Copy
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.42" data-path="oc/Copy与内存管理.html">
+            
+                
+                    <a href="../oc/Copy与内存管理.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.42.</b>
+                        
+                         OC Copy与内存管理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.43" data-path="oc/Copy关键字.html">
+            
+                
+                    <a href="../oc/Copy关键字.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.43.</b>
+                        
+                         OC @property中的copy关键字
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.44" data-path="oc/自定义的类实现copy操作.html">
+            
+                
+                    <a href="../oc/自定义的类实现copy操作.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.44.</b>
+                        
+                         OC 自定义的类实现copy操作
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.45" data-path="oc/单例设计模式.html">
+            
+                
+                    <a href="../oc/单例设计模式.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.45.</b>
+                        
+                         OC 单例设计模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.46" data-path="oc/Protocol基本概念.html">
+            
+                
+                    <a href="../oc/Protocol基本概念.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.46.</b>
+                        
+                         OC Protocol基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.47" data-path="oc/Protocol类型限制.html">
+            
+                
+                    <a href="../oc/Protocol类型限制.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.47.</b>
+                        
+                         OC Protocol类型限制
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.48" data-path="oc/Protocol其他用法.html">
+            
+                
+                    <a href="../oc/Protocol其他用法.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.48.</b>
+                        
+                         OC Protocol其他用法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.49" data-path="oc/代理设计模式.html">
+            
+                
+                    <a href="../oc/代理设计模式.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.49.</b>
+                        
+                         OC 代理设计模式
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.50" data-path="oc/oc_memory/category基本概念.html">
+            
+                
+                    <a href="../oc/oc_memory/category基本概念.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.50.</b>
+                        
+                         OC Category基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.51" data-path="oc/oc_memory/Category注意事项.html">
+            
+                
+                    <a href="../oc/oc_memory/Category注意事项.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.51.</b>
+                        
+                         OC Category注意事项
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.52" data-path="oc/类扩展匿名分类.html">
+            
+                
+                    <a href="../oc/类扩展匿名分类.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.52.</b>
+                        
+                         OC 类扩展(匿名分类)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.53" data-path="oc/Block基本概念.html">
+            
+                
+                    <a href="../oc/Block基本概念.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.53.</b>
+                        
+                         OC Block基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.54" data-path="oc/Block注意事项.html">
+            
+                
+                    <a href="../oc/Block注意事项.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.54.</b>
+                        
+                         OC Block注意事项
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.55" data-path="oc/Block进阶.html">
+            
+                
+                    <a href="../oc/Block进阶.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.55.</b>
+                        
+                         OC Block进阶
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.56" data-path="oc/Typedef和Block.html">
+            
+                
+                    <a href="../oc/Typedef和Block.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.56.</b>
+                        
+                         OC 类扩展(Typedef和Block)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.57" data-path="oc/自定义构造方法.html">
+            
+                
+                    <a href="../oc/自定义构造方法.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.57.</b>
+                        
+                         OC 自定义构造方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.58" data-path="oc/自定义类工厂方法.html">
+            
+                
+                    <a href="../oc/自定义类工厂方法.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.58.</b>
+                        
+                         OC 自定义类工厂方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.59" data-path="oc/继承中的自定义构造方法.html">
+            
+                
+                    <a href="../oc/继承中的自定义构造方法.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.59.</b>
+                        
+                         OC 自定义类工厂方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.60" data-path="oc/SEL类型.html">
+            
+                
+                    <a href="../oc/SEL类型.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.60.</b>
+                        
+                         OC SEL类型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.61" data-path="oc/oc_memory/oc_memory.html">
+            
+                
+                    <a href="../oc/oc_memory/oc_memory.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.61.</b>
+                        
+                         OC 内存管理
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.61.1" data-path="oc/oc_memory/引用计数器.html">
+            
+                
+                    <a href="../oc/oc_memory/引用计数器.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.61.1.</b>
+                        
+                         OC 引用计数器
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.61.2" data-path="oc/oc_memory/dealloc方法.html">
+            
+                
+                    <a href="../oc/oc_memory/dealloc方法.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.61.2.</b>
+                        
+                         OC dealloc方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.61.3" data-path="oc/oc_memory/野指针.html">
+            
+                
+                    <a href="../oc/oc_memory/野指针.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.61.3.</b>
+                        
+                         OC 野指针
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.61.4" data-path="oc/oc_memory/关闭ARC功能和开启僵尸对象监控.html">
+            
+                
+                    <a href="../oc/oc_memory/关闭ARC功能和开启僵尸对象监控.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.61.4.</b>
+                        
+                         OC 关闭ARC功能和开启僵尸对象监控
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.61.5" data-path="oc/oc_memory/内存管理原则.html">
+            
+                
+                    <a href="../oc/oc_memory/内存管理原则.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.61.5.</b>
+                        
+                         OC 内存管理原则
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.61.6" data-path="oc/oc_memory/循环retian.html">
+            
+                
+                    <a href="../oc/oc_memory/循环retian.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.61.6.</b>
+                        
+                         OC 循环retian
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.61.7" data-path="oc/oc_memory/autorelease基本使用.html">
+            
+                
+                    <a href="../oc/oc_memory/autorelease基本使用.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.61.7.</b>
+                        
+                         OC autorelease基本使用
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.61.8" data-path="oc/oc_memory/autorelease注意事项.html">
+            
+                
+                    <a href="../oc/oc_memory/autorelease注意事项.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.61.8.</b>
+                        
+                         OC autorelease注意事项
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.61.9" data-path="oc/oc_memory/ARC基本概念.html">
+            
+                
+                    <a href="../oc/oc_memory/ARC基本概念.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.61.9.</b>
+                        
+                         OC ARC基本概念
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.61.10" data-path="oc/oc_memory/ARC快速入门.html">
+            
+                
+                    <a href="../oc/oc_memory/ARC快速入门.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.61.10.</b>
+                        
+                         OC ARC快速入门
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.61.11" data-path="oc/oc_memory/ARC下的内存管理.html">
+            
+                
+                    <a href="../oc/oc_memory/ARC下的内存管理.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.61.11.</b>
+                        
+                         OC ARC下的内存管理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.61.12" data-path="oc/oc_memory/ARC和MRC兼容和转换.html">
+            
+                
+                    <a href="../oc/oc_memory/ARC和MRC兼容和转换.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.61.12.</b>
+                        
+                         OC ARC和MRC兼容和转换
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="Swift/Swift.html">
+            
+                
+                    <a href="../Swift/Swift.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         IOS Swift
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="Swift/常量和变量.html">
+            
+                
+                    <a href="../Swift/常量和变量.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         Swift 常量和变量
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="Swift/Swift中的数据类型.html">
+            
+                
+                    <a href="../Swift/Swift中的数据类型.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         Swift 中的数据类型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="Swift/getter和setter.html">
+            
+                
+                    <a href="../Swift/getter和setter.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         Swift getter和setter
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="Swift/字符串.html">
+            
+                
+                    <a href="../Swift/字符串.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         Swift 字符串
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="Swift/可选类型.html">
+            
+                
+                    <a href="../Swift/可选类型.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         Swift 可选类型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.6" data-path="Swift/懒加载.html">
+            
+                
+                    <a href="../Swift/懒加载.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                         Swift 懒加载
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.7" data-path="Swift/逻辑分支.html">
+            
+                
+                    <a href="../Swift/逻辑分支.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                         Swift 逻辑分支
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.8" data-path="Swift/数组.html">
+            
+                
+                    <a href="../Swift/数组.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                         Swift 数组
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.9" data-path="Swift/循环.html">
+            
+                
+                    <a href="../Swift/循环.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                         Swift 循环
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.10" data-path="Swift/元祖.html">
+            
+                
+                    <a href="../Swift/元祖.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.10.</b>
+                        
+                         Swift 元祖
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.11" data-path="Swift/字典.html">
+            
+                
+                    <a href="../Swift/字典.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.11.</b>
+                        
+                         Swift 字典
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.12" data-path="Swift/Swift中类的定义.html">
+            
+                
+                    <a href="../Swift/Swift中类的定义.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.12.</b>
+                        
+                         Swift 中类的定义
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.13" data-path="Swift/函数.html">
+            
+                
+                    <a href="../Swift/函数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.13.</b>
+                        
+                         Swift 函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.14" data-path="Swift/类的构造函数.html">
+            
+                
+                    <a href="../Swift/类的构造函数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.14.</b>
+                        
+                         Swift 类的构造函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.15" data-path="Swift/闭包.html">
+            
+                
+                    <a href="../Swift/闭包.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.15.</b>
+                        
+                         Swift 闭包
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.16" data-path="Swift/处理异常的方法.html">
+            
+                
+                    <a href="../Swift/处理异常的方法.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.16.</b>
+                        
+                         Swift 处理异常的方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.17" data-path="Swift/便利构造函数(相当于分类">
+            
+                
+                    <a href="../Swift/便利构造函数(相当于分类">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.17.</b>
+                        
+                         Swift 便利构造函数(相当于分类)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.18" data-path="Swift/swift类方法.html">
+            
+                
+                    <a href="../Swift/swift类方法.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.18.</b>
+                        
+                         Swift swift类方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.19" data-path="Swift/swift时间监听.html">
+            
+                
+                    <a href="../Swift/swift时间监听.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.19.</b>
+                        
+                         Swift swift时间监听
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="Swift微博/swift微博.html">
+            
+                
+                    <a href="../Swift微博/swift微博.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         IOS Swift微博
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="Swift微博/初始化项目.html">
+            
+                
+                    <a href="../Swift微博/初始化项目.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         Swift 初始化项目
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="Swift微博/纯代码搭建项目框架.html">
+            
+                
+                    <a href="../Swift微博/纯代码搭建项目框架.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         Swift 纯代码搭建项目框架
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="Swift微博/动态创建控制器.html">
+            
+                
+                    <a href="../Swift微博/动态创建控制器.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         Swift 通过json动态创建控制器(了解)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="Swift微博/storyboard_reference.html">
+            
+                
+                    <a href="../Swift微博/storyboard_reference.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         Swift Storyboard Reference
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="Swift微博/布局TabBar.html">
+            
+                
+                    <a href="../Swift微博/布局TabBar.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         Swift 布局TabBar
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6" data-path="Swift微博/访客视图.html">
+            
+                
+                    <a href="../Swift微博/访客视图.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                         Swift 访客视图
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="Xcode/Xcode.html">
+            
+                
+                    <a href="../Xcode/Xcode.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         IOS Xcode
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="6.1" data-path="Xcode/Xcode模板修改.html">
+            
+                
+                    <a href="../Xcode/Xcode模板修改.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                         Xcode 模板修改
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.2" data-path="Xcode/xcode文档安装.html">
+            
+                
+                    <a href="../Xcode/xcode文档安装.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                         Xcode 文档安装
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.3" data-path="Xcode/自定义代码段.html">
+            
+                
+                    <a href="../Xcode/自定义代码段.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                         Xcode 自定义代码段
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.4" data-path="Xcode/Xcode快捷键.html">
+            
+                
+                    <a href="../Xcode/Xcode快捷键.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                         Xcode 快捷键
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.5" data-path="Xcode/真机调试.html">
+            
+                
+                    <a href="../Xcode/真机调试.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                         Xcode 真机调试
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.6" data-path="Xcode/Xcode7调试.html">
+            
+                
+                    <a href="../Xcode/Xcode7调试.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                         Xcode Xcode7调试
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.7" data-path="Xcode/测试打包.html">
+            
+                
+                    <a href="../Xcode/测试打包.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                         Xcode 测试打包
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.8" data-path="Xcode/App发布.html">
+            
+                
+                    <a href="../Xcode/App发布.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                         Xcode App发布
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.9" data-path="xcode/cocoapods.html">
+            
+                
+                    <a href="../xcode/cocoapods.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                         CocoaPods使用方法
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="ios_attention/ios开发注意点.html">
+            
+                
+                    <a href="../ios_attention/ios开发注意点.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         IOS 开发注意
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1" data-path="ios_attention/property内存管理策略选择.html">
+            
+                
+                    <a href="../ios_attention/property内存管理策略选择.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         @property内存管理策略选择
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="ios_interview/ios_面试题.html">
+            
+                
+                    <a href="../ios_interview/ios_面试题.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         IOS 面试宝典
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >My Book</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_795">
+                    
+                        <h1 id="i--reactivecocoaracmvvm">(I)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶</h1>
+<h3 id="1reactivecocoa">1.ReactiveCocoa简介</h3>
+<p>ReactiveCocoa（简称为<code>RAC</code>）,是由Github开源的一个应用于iOS和OS开发的新框架,Cocoa是苹果整套框架的简称，因此很多苹果框架喜欢以Cocoa结尾。</p>
+<h3 id="2reactivecocoa">2.ReactiveCocoa作用</h3>
+<p>在我们iOS开发过程中，经常会响应某些事件来处理某些业务逻辑，例如按钮的点击，上下拉刷新，网络请求，属性的变化（通过KVO）或者用户位置的变化（通过CoreLocation）。但是这些事件都用不同的方式来处理，比如action、delegate、KVO、callback等。</p>
+<p>其实这些事件，都可以通过RAC处理，ReactiveCocoa为事件提供了很多处理方法，而且利用RAC处理事件很方便，可以把要处理的事情，和监听的事情的代码放在一起，这样非常方便我们管理，就不需要跳到对应的方法里。非常符合我们开发中<code>高聚合，低耦合</code>的思想。</p>
+<h3 id="3">3.编程思想</h3>
+<p>在开发中我们也不能太依赖于某个框架，否则这个框架不更新了，导致项目后期没办法维护，比如之前Facebook提供的<code>Three20框架</code>，在当时也是神器，但是后来不更新了，也就没什么人用了。因此我感觉学习一个框架，还是有必要了解它的<code>编程思想</code>。</p>
+<p>先简单介绍下目前咱们已知的<code>编程思想</code>。</p>
+<p>3.1 <code>面向过程</code>：处理事情以过程为核心，一步一步的实现。</p>
+<p>3.2 <code>面向对象</code>：万物皆对象</p>
+<p>3.3 <code>链式编程思想</code>：是将多个操作（多行代码）通过点号(.)链接在一起成为一句代码,使代码可读性好。a(1).b(2).c(3)</p>
+<ul>
+<li><p><code>链式编程特点</code>：方法的返回值是block,block必须有返回值（本身对象），block参数（需要操作的值）</p>
+</li>
+<li><p><code>代表</code>：masonry框架。</p>
+</li>
+<li><p><code>练习一</code>:模仿masonry，写一个加法计算器，练习链式编程思想。</p>
+</li>
+</ul>
+<p>3.4 <code>响应式编程思想</code>：不需要考虑调用顺序，只需要知道考虑结果，类似于蝴蝶效应，产生一个事件，会影响很多东西，这些事件像流一样的传播出去，然后影响结果，借用面向对象的一句话，万物皆是流。</p>
+<ul>
+<li><p><code>代表</code>：KVO运用。</p>
+</li>
+<li><p><code>练习二</code>:KVO底层实现。</p>
+</li>
+</ul>
+<p>3.5 <code>函数式编程思想</code>：是把操作尽量写成一系列嵌套的函数或者方法调用。</p>
+<ul>
+<li><code>函数式编程本质</code>:就是往方法中传入Block,方法中嵌套Block调用，把代码聚合起来管理</li>
+<li><p><code>函数式编程特点</code>：每个方法必须有返回值（本身对象）,把函数或者Block当做参数,block参数（需要操作的值）block返回值（操作结果）</p>
+</li>
+<li><p><code>代表</code>：ReactiveCocoa。</p>
+</li>
+<li><p><code>练习三</code>:用函数式编程实现，写一个加法计算器,并且加法计算器自带判断是否等于某个值.</p>
+</li>
+</ul>
+<h3 id="4reactivecocoa">4.ReactiveCocoa编程思想</h3>
+<p>ReactiveCocoa结合了几种编程风格：</p>
+<p><code>函数式编程（Functional Programming）</code></p>
+<p><code>响应式编程（Reactive Programming）</code></p>
+<p>所以，你可能听说过ReactiveCocoa被描述为函数响应式编程（FRP）框架。</p>
+<p>以后使用RAC解决问题，就不需要考虑调用顺序，直接考虑结果，把每一次操作都写成一系列嵌套的方法中，使代码高聚合，方便管理。</p>
+<h3 id="5reactivecocoa">5.如何导入ReactiveCocoa框架</h3>
+<p>通常都会使用CocoaPods（用于管理第三方框架的插件）帮助我们导入。</p>
+<p>PS:CocoaPods教程（<a href="http://code4app.com/article/cocoapods-install-usage）" target="_blank">http://code4app.com/article/cocoapods-install-usage）</a></p>
+<p><code>练习四</code>:创建一个新的工程，演示下，框架的导入。</p>
+<p><code>注意</code>：</p>
+<ul>
+<li>podfile如果只描述pod &#39;ReactiveCocoa&#39;, &#39;~&gt; 4.0.2-alpha-1&#39;，会导入不成功</li>
+</ul>
+<p><img src="Snip20150926_1.png" alt=""></p>
+<ul>
+<li>报错信息</li>
+</ul>
+<p><img src="Snip20150926_2.png" alt=""></p>
+<ul>
+<li>需要在podfile加上use_frameworks，重新pod install 才能导入成功。</li>
+</ul>
+<p><img src="Snip20150926_3.png" alt=""></p>
+<h3 id="6reactivecocoa">6.ReactiveCocoa常见类。</h3>
+<p>学习框架首要之处:个人认为先要搞清楚框架中常用的类，在RAC中最核心的类RACSiganl,搞定这个类就能用ReactiveCocoa开发了。</p>
+<p><code>练习五</code>:介绍常见类</p>
+<p><code>RACSiganl</code>:信号类,一般表示将来有数据传递，只要有数据改变，信号内部接收到数据，就会马上发出数据。</p>
+<ul>
+<li><p>信号类(RACSiganl)，只是表示当数据改变时，信号内部会发出数据，它本身不具备发送信号的能力，而是交给内部一个订阅者去发出。</p>
+</li>
+<li><p>默认一个信号都是冷信号，也就是值改变了，也不会触发，只有订阅了这个信号，这个信号才会变为热信号，值改变了才会触发。</p>
+</li>
+<li><p>如何订阅信号：调用信号RACSignal的subscribeNext就能订阅。</p>
+</li>
+<li><p><code>RACSiganl简单使用:</code></p>
+</li>
+</ul>
+<pre><code class="lang-objc">    <span class="hljs-comment">// RACSignal使用步骤：</span>
+    <span class="hljs-comment">// 1.创建信号 + (RACSignal *)createSignal:(RACDisposable * (^)(id&lt;RACSubscriber&gt; subscriber))didSubscribe</span>
+    <span class="hljs-comment">// 2.订阅信号,才会激活信号. - (RACDisposable *)subscribeNext:(void (^)(id x))nextBlock</span>
+    <span class="hljs-comment">// 3.发送信号 - (void)sendNext:(id)value</span>
+
+
+    <span class="hljs-comment">// RACSignal底层实现：</span>
+    <span class="hljs-comment">// 1.创建信号，首先把didSubscribe保存到信号中，还不会触发。</span>
+    <span class="hljs-comment">// 2.当信号被订阅，也就是调用signal的subscribeNext:nextBlock</span>
+    <span class="hljs-comment">// 2.2 subscribeNext内部会创建订阅者subscriber，并且把nextBlock保存到subscriber中。</span>
+    <span class="hljs-comment">// 2.1 subscribeNext内部会调用siganl的didSubscribe</span>
+    <span class="hljs-comment">// 3.siganl的didSubscribe中调用[subscriber sendNext:@1];</span>
+    <span class="hljs-comment">// 3.1 sendNext底层其实就是执行subscriber的nextBlock</span>
+
+    <span class="hljs-comment">// 1.创建信号</span>
+    RACSignal *siganl = [RACSignal createSignal:^RACDisposable *(<span class="hljs-keyword">id</span>&lt;RACSubscriber&gt; subscriber) {
+
+        <span class="hljs-comment">// block调用时刻：每当有订阅者订阅信号，就会调用block。</span>
+        <span class="hljs-comment">//如果订阅者一直都在，就不会去取消订阅</span>
+         <span class="hljs-keyword">self</span><span class="hljs-variable">.subscriber</span> = subscriber;
+
+        <span class="hljs-comment">// 2.发送信号</span>
+        [subscriber sendNext:@<span class="hljs-number">1</span>];
+
+        <span class="hljs-comment">// 如果不在发送数据，最好发送信号完成，内部会自动调用[RACDisposable disposable]取消订阅信号。</span>
+        <span class="hljs-comment">//[subscriber sendCompleted];</span>
+
+        <span class="hljs-keyword">return</span> [RACDisposable disposableWithBlock:^{
+
+            <span class="hljs-comment">// block调用时刻：当信号发送完成或者发送错误，就会自动执行这个block,取消订阅信号。</span>
+
+            <span class="hljs-comment">// 执行完Block后，当前信号就不在被订阅了。</span>
+
+            <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"信号被销毁"</span>);
+
+        }];
+    }];
+
+    <span class="hljs-comment">// 3.订阅信号,才会激活信号.</span>
+     RACDisposable *disposable = [ siganl subscribeNext:^(<span class="hljs-keyword">id</span> x) {
+        <span class="hljs-comment">// block调用时刻：每当有信号发出数据，就会调用block.</span>
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"接收到数据:%@"</span>,x);
+    }];
+
+    <span class="hljs-comment">//手动取消订阅</span>
+    [disposable dispose];
+</code></pre>
+<p><code>RACSubscriber</code>:表示订阅者的意思，用于发送信号，这是一个协议，不是一个类，只要遵守这个协议，并且实现方法才能成为订阅者。通过create创建的信号，都有一个订阅者，帮助他发送数据。</p>
+<p><code>RACDisposable</code>:用于取消订阅或者清理资源，当信号发送完成或者发送错误的时候，就会自动触发它。</p>
+<ul>
+<li><code>使用场景</code>:不想监听某个信号时，可以通过它主动取消订阅信号。</li>
+</ul>
+<p><code>RACSubject</code>:RACSubject:信号提供者，自己可以充当信号，又能发送信号。</p>
+<ul>
+<li><code>使用场景</code>:通常用来代替代理，有了它，就不必要定义代理了。</li>
+</ul>
+<p><code>RACReplaySubject</code>:重复提供信号类，RACSubject的子类。</p>
+<ul>
+<li><code>RACReplaySubject</code>与<code>RACSubject</code>区别:<ul>
+<li>RACReplaySubject可以先发送信号，在订阅信号，RACSubject就不可以。</li>
+</ul>
+</li>
+<li><code>使用场景一</code>:如果一个信号每被订阅一次，就需要把之前的值重复发送一遍，使用重复提供信号类。</li>
+<li><p><code>使用场景二</code>:可以设置capacity数量来限制缓存的value的数量,即只缓充最新的几个值。</p>
+</li>
+<li><p><code>RACSubject和RACReplaySubject简单使用:</code></p>
+</li>
+</ul>
+<pre><code class="lang-objc">    <span class="hljs-comment">// RACSubject使用步骤</span>
+    <span class="hljs-comment">// 1.创建信号 [RACSubject subject]，跟RACSiganl不一样，创建信号时没有block。</span>
+    <span class="hljs-comment">// 2.订阅信号 - (RACDisposable *)subscribeNext:(void (^)(id x))nextBlock</span>
+    <span class="hljs-comment">// 3.发送信号 sendNext:(id)value</span>
+
+    <span class="hljs-comment">// RACSubject:底层实现和RACSignal不一样。</span>
+    <span class="hljs-comment">// 1.调用subscribeNext订阅信号，只是把订阅者保存起来，并且订阅者的nextBlock已经赋值了。</span>
+    <span class="hljs-comment">// 2.调用sendNext发送信号，遍历刚刚保存的所有订阅者，一个一个调用订阅者的nextBlock。</span>
+
+    <span class="hljs-comment">// 1.创建信号</span>
+    RACSubject *subject = [RACSubject subject];
+
+    <span class="hljs-comment">// 2.订阅信号</span>
+    [subject subscribeNext:^(<span class="hljs-keyword">id</span> x) {
+        <span class="hljs-comment">// block调用时刻：当信号发出新值，就会调用.</span>
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"第一个订阅者%@"</span>,x);
+    }];
+    [subject subscribeNext:^(<span class="hljs-keyword">id</span> x) {
+        <span class="hljs-comment">// block调用时刻：当信号发出新值，就会调用.</span>
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"第二个订阅者%@"</span>,x);
+    }];
+
+    <span class="hljs-comment">// 3.发送信号</span>
+    [subject sendNext:<span class="hljs-string">@"1"</span>];
+
+
+    <span class="hljs-comment">// RACReplaySubject使用步骤:</span>
+    <span class="hljs-comment">// 1.创建信号 [RACReplaySubject subject]，跟RACSiganl不一样，创建信号时没有block。</span>
+    <span class="hljs-comment">// 2.可以先订阅信号，也可以先发送信号。</span>
+    <span class="hljs-comment">// 2.1 订阅信号 - (RACDisposable *)subscribeNext:(void (^)(id x))nextBlock</span>
+    <span class="hljs-comment">// 2.2 发送信号 sendNext:(id)value</span>
+
+    <span class="hljs-comment">// RACReplaySubject:底层实现和RACSubject不一样。</span>
+    <span class="hljs-comment">// 1.调用sendNext发送信号，把值保存起来，然后遍历刚刚保存的所有订阅者，一个一个调用订阅者的nextBlock。</span>
+    <span class="hljs-comment">// 2.调用subscribeNext订阅信号，遍历保存的所有值，一个一个调用订阅者的nextBlock</span>
+
+    <span class="hljs-comment">// 如果想当一个信号被订阅，就重复播放之前所有值，需要先发送信号，在订阅信号。</span>
+    <span class="hljs-comment">// 也就是先保存值，在订阅值。</span>
+
+    <span class="hljs-comment">// 1.创建信号</span>
+    RACReplaySubject *replaySubject = [RACReplaySubject subject];
+
+    <span class="hljs-comment">// 2.发送信号</span>
+    [replaySubject sendNext:@<span class="hljs-number">1</span>];
+    [replaySubject sendNext:@<span class="hljs-number">2</span>];
+
+    <span class="hljs-comment">// 3.订阅信号</span>
+    [replaySubject subscribeNext:^(<span class="hljs-keyword">id</span> x) {
+
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"第一个订阅者接收到的数据%@"</span>,x);
+    }];
+
+    <span class="hljs-comment">// 订阅信号</span>
+    [replaySubject subscribeNext:^(<span class="hljs-keyword">id</span> x) {
+
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"第二个订阅者接收到的数据%@"</span>,x);
+    }];
+</code></pre>
+<ul>
+<li><code>RACSubject替换代理</code></li>
+</ul>
+<pre><code class="lang-objc">    <span class="hljs-comment">// 需求:</span>
+    <span class="hljs-comment">// 1.给当前控制器添加一个按钮，modal到另一个控制器界面</span>
+    <span class="hljs-comment">// 2.另一个控制器view中有个按钮，点击按钮，通知当前控制器</span>
+
+步骤一：在第二个控制器<span class="hljs-variable">.h</span>，添加一个RACSubject代替代理。
+<span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">TwoViewController</span> : <span class="hljs-title">UIViewController</span></span>
+
+<span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">strong</span>) RACSubject *delegateSignal;
+
+<span class="hljs-keyword">@end</span>
+
+步骤二：监听第二个控制器按钮点击
+<span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">TwoViewController</span></span>
+- (<span class="hljs-keyword">IBAction</span>)notice:(<span class="hljs-keyword">id</span>)sender {
+    <span class="hljs-comment">// 通知第一个控制器，告诉它，按钮被点了</span>
+
+     <span class="hljs-comment">// 通知代理</span>
+     <span class="hljs-comment">// 判断代理信号是否有值</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">self</span><span class="hljs-variable">.delegateSignal</span>) {
+        <span class="hljs-comment">// 有值，才需要通知</span>
+        [<span class="hljs-keyword">self</span><span class="hljs-variable">.delegateSignal</span> sendNext:<span class="hljs-literal">nil</span>];
+    }
+}
+<span class="hljs-keyword">@end</span>
+
+步骤三：在第一个控制器中，监听跳转按钮，给第二个控制器的代理信号赋值，并且监听.
+<span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">OneViewController</span></span>
+- (<span class="hljs-keyword">IBAction</span>)btnClick:(<span class="hljs-keyword">id</span>)sender {
+
+    <span class="hljs-comment">// 创建第二个控制器</span>
+    TwoViewController *twoVc = [[TwoViewController alloc] init];
+
+    <span class="hljs-comment">// 设置代理信号</span>
+    twoVc<span class="hljs-variable">.delegateSignal</span> = [RACSubject subject];
+
+    <span class="hljs-comment">// 订阅代理信号</span>
+    [twoVc<span class="hljs-variable">.delegateSignal</span> subscribeNext:^(<span class="hljs-keyword">id</span> x) {
+
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"点击了通知按钮"</span>);
+    }];
+
+    <span class="hljs-comment">// 跳转到第二个控制器</span>
+    [<span class="hljs-keyword">self</span> presentViewController:twoVc animated:<span class="hljs-literal">YES</span> completion:<span class="hljs-literal">nil</span>];
+
+}
+<span class="hljs-keyword">@end</span>
+</code></pre>
+<p><code>RACTuple</code>:元组类,类似NSArray,用来包装值.</p>
+<p><code>RACSequence</code>:RAC中的集合类，用于代替NSArray,NSDictionary,可以使用它来快速遍历数组和字典。</p>
+<p><code>使用场景</code>：1.字典转模型</p>
+<p><code>RACSequence和RACTuple简单使用</code></p>
+<pre><code class="lang-objc">    <span class="hljs-comment">// 1.遍历数组</span>
+    <span class="hljs-built_in">NSArray</span> *numbers = @[@<span class="hljs-number">1</span>,@<span class="hljs-number">2</span>,@<span class="hljs-number">3</span>,@<span class="hljs-number">4</span>];
+
+    <span class="hljs-comment">// 这里其实是三步</span>
+    <span class="hljs-comment">// 第一步: 把数组转换成集合RACSequence numbers.rac_sequence</span>
+    <span class="hljs-comment">// 第二步: 把集合RACSequence转换RACSignal信号类,numbers.rac_sequence.signal</span>
+    <span class="hljs-comment">// 第三步: 订阅信号，激活信号，会自动把集合中的所有值，遍历出来。</span>
+    [numbers<span class="hljs-variable">.rac_sequence</span><span class="hljs-variable">.signal</span> subscribeNext:^(<span class="hljs-keyword">id</span> x) {
+
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"%@"</span>,x);
+    }];
+
+
+    <span class="hljs-comment">// 2.遍历字典,遍历出来的键值对会包装成RACTuple(元组对象)</span>
+    <span class="hljs-built_in">NSDictionary</span> *dict = @{<span class="hljs-string">@"name"</span>:<span class="hljs-string">@"xmg"</span>,<span class="hljs-string">@"age"</span>:@<span class="hljs-number">18</span>};
+    [dict<span class="hljs-variable">.rac_sequence</span><span class="hljs-variable">.signal</span> subscribeNext:^(RACTuple *x) {
+
+        <span class="hljs-comment">// 解包元组，会把元组的值，按顺序给参数里面的变量赋值</span>
+        RACTupleUnpack(<span class="hljs-built_in">NSString</span> *key,<span class="hljs-built_in">NSString</span> *value) = x;
+
+        <span class="hljs-comment">// 相当于以下写法</span>
+<span class="hljs-comment">//        NSString *key = x[0];</span>
+<span class="hljs-comment">//        NSString *value = x[1];</span>
+
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"%@ %@"</span>,key,value);
+
+    }];
+
+
+    <span class="hljs-comment">// 3.字典转模型</span>
+    <span class="hljs-comment">// 3.1 OC写法</span>
+    <span class="hljs-built_in">NSString</span> *filePath = [[<span class="hljs-built_in">NSBundle</span> mainBundle] pathForResource:<span class="hljs-string">@"flags.plist"</span> ofType:<span class="hljs-literal">nil</span>];
+
+    <span class="hljs-built_in">NSArray</span> *dictArr = [<span class="hljs-built_in">NSArray</span> arrayWithContentsOfFile:filePath];
+
+    <span class="hljs-built_in">NSMutableArray</span> *items = [<span class="hljs-built_in">NSMutableArray</span> array];
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-built_in">NSDictionary</span> *dict <span class="hljs-keyword">in</span> dictArr) {
+        FlagItem *item = [FlagItem flagWithDict:dict];
+        [items addObject:item];
+    }
+
+    <span class="hljs-comment">// 3.2 RAC写法</span>
+    <span class="hljs-built_in">NSString</span> *filePath = [[<span class="hljs-built_in">NSBundle</span> mainBundle] pathForResource:<span class="hljs-string">@"flags.plist"</span> ofType:<span class="hljs-literal">nil</span>];
+
+    <span class="hljs-built_in">NSArray</span> *dictArr = [<span class="hljs-built_in">NSArray</span> arrayWithContentsOfFile:filePath];
+
+    <span class="hljs-built_in">NSMutableArray</span> *flags = [<span class="hljs-built_in">NSMutableArray</span> array];
+
+    _flags = flags;
+
+    <span class="hljs-comment">// rac_sequence注意点：调用subscribeNext，并不会马上执行nextBlock，而是会等一会。</span>
+    [dictArr<span class="hljs-variable">.rac_sequence</span><span class="hljs-variable">.signal</span> subscribeNext:^(<span class="hljs-keyword">id</span> x) {
+        <span class="hljs-comment">// 运用RAC遍历字典，x：字典</span>
+
+        FlagItem *item = [FlagItem flagWithDict:x];
+
+        [flags addObject:item];
+
+    }];
+
+    <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"%@"</span>,  NSStringFromCGRect([UIScreen mainScreen]<span class="hljs-variable">.bounds</span>));
+
+
+    <span class="hljs-comment">// 3.3 RAC高级写法:</span>
+    <span class="hljs-built_in">NSString</span> *filePath = [[<span class="hljs-built_in">NSBundle</span> mainBundle] pathForResource:<span class="hljs-string">@"flags.plist"</span> ofType:<span class="hljs-literal">nil</span>];
+
+    <span class="hljs-built_in">NSArray</span> *dictArr = [<span class="hljs-built_in">NSArray</span> arrayWithContentsOfFile:filePath];
+    <span class="hljs-comment">// map:映射的意思，目的：把原始值value映射成一个新值</span>
+    <span class="hljs-comment">// array: 把集合转换成数组</span>
+    <span class="hljs-comment">// 底层实现：当信号被订阅，会遍历集合中的原始值，映射成新值，并且保存到新的数组里。</span>
+    <span class="hljs-built_in">NSArray</span> *flags = [[dictArr<span class="hljs-variable">.rac_sequence</span> map:^<span class="hljs-keyword">id</span>(<span class="hljs-keyword">id</span> value) {
+
+        <span class="hljs-keyword">return</span> [FlagItem flagWithDict:value];
+
+    }] array];
+</code></pre>
+<p><code>RACMulticastConnection</code>:用于当一个信号，被多次订阅时，为了保证创建信号时，避免多次调用创建信号中的block，造成副作用，可以使用这个类处理。</p>
+<p><code>使用注意</code>:RACMulticastConnection通过RACSignal的-publish或者-muticast:方法创建.</p>
+<p><code>RACMulticastConnection简单使用</code>:</p>
+<pre><code class="lang-objc">    <span class="hljs-comment">// RACMulticastConnection使用步骤:</span>
+    <span class="hljs-comment">// 1.创建信号 + (RACSignal *)createSignal:(RACDisposable * (^)(id&lt;RACSubscriber&gt; subscriber))didSubscribe</span>
+    <span class="hljs-comment">// 2.创建连接 RACMulticastConnection *connect = [signal publish];</span>
+    <span class="hljs-comment">// 3.订阅信号,注意：订阅的不在是之前的信号，而是连接的信号。 [connect.signal subscribeNext:nextBlock]</span>
+    <span class="hljs-comment">// 4.连接 [connect connect]</span>
+
+    <span class="hljs-comment">// RACMulticastConnection底层原理:</span>
+    <span class="hljs-comment">// 1.创建connect，connect.sourceSignal -&gt; RACSignal(原始信号)  connect.signal -&gt; RACSubject</span>
+    <span class="hljs-comment">// 2.订阅connect.signal，会调用RACSubject的subscribeNext，创建订阅者，而且把订阅者保存起来，不会执行block。</span>
+    <span class="hljs-comment">// 3.[connect connect]内部会订阅RACSignal(原始信号)，并且订阅者是RACSubject</span>
+    <span class="hljs-comment">// 3.1.订阅原始信号，就会调用原始信号中的didSubscribe</span>
+    <span class="hljs-comment">// 3.2 didSubscribe，拿到订阅者调用sendNext，其实是调用RACSubject的sendNext</span>
+    <span class="hljs-comment">// 4.RACSubject的sendNext,会遍历RACSubject所有订阅者发送信号。</span>
+    <span class="hljs-comment">// 4.1 因为刚刚第二步，都是在订阅RACSubject，因此会拿到第二步所有的订阅者，调用他们的nextBlock</span>
+
+
+    <span class="hljs-comment">// 需求：假设在一个信号中发送请求，每次订阅一次都会发送请求，这样就会导致多次请求。</span>
+    <span class="hljs-comment">// 解决：使用RACMulticastConnection就能解决.</span>
+
+    <span class="hljs-comment">// 1.创建请求信号</span>
+   RACSignal *signal = [RACSignal createSignal:^RACDisposable *(<span class="hljs-keyword">id</span>&lt;RACSubscriber&gt; subscriber) {
+
+
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"发送请求"</span>);
+
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>;
+    }];
+    <span class="hljs-comment">// 2.订阅信号</span>
+    [signal subscribeNext:^(<span class="hljs-keyword">id</span> x) {
+
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"接收数据"</span>);
+
+    }];
+    <span class="hljs-comment">// 2.订阅信号</span>
+    [signal subscribeNext:^(<span class="hljs-keyword">id</span> x) {
+
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"接收数据"</span>);
+
+    }];
+
+    <span class="hljs-comment">// 3.运行结果，会执行两遍发送请求，也就是每次订阅都会发送一次请求</span>
+
+
+    <span class="hljs-comment">// RACMulticastConnection:解决重复请求问题</span>
+    <span class="hljs-comment">// 1.创建信号</span>
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable *(<span class="hljs-keyword">id</span>&lt;RACSubscriber&gt; subscriber) {
+
+
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"发送请求"</span>);
+        [subscriber sendNext:@<span class="hljs-number">1</span>];
+
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>;
+    }];
+
+    <span class="hljs-comment">// 2.创建连接</span>
+    RACMulticastConnection *connect = [signal publish];
+
+    <span class="hljs-comment">// 3.订阅信号，</span>
+    <span class="hljs-comment">// 注意：订阅信号，也不能激活信号，只是保存订阅者到数组，必须通过连接,当调用连接，就会一次性调用所有订阅者的sendNext:</span>
+    [connect<span class="hljs-variable">.signal</span> subscribeNext:^(<span class="hljs-keyword">id</span> x) {
+
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"订阅者一信号"</span>);
+
+    }];
+
+    [connect<span class="hljs-variable">.signal</span> subscribeNext:^(<span class="hljs-keyword">id</span> x) {
+
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"订阅者二信号"</span>);
+
+    }];
+
+    <span class="hljs-comment">// 4.连接,激活信号</span>
+    [connect connect];
+</code></pre>
+<p><code>RACCommand</code>:RAC中用于处理事件的类，可以把事件如何处理,事件中的数据如何传递，包装到这个类中，他可以很方便的监控事件的执行过程。</p>
+<p><code>使用场景</code>:监听按钮点击，网络请求</p>
+<p><code>RACCommand简单使用</code></p>
+<pre><code class="lang-objc">
+     <span class="hljs-comment">// 一、RACCommand使用步骤:</span>
+    <span class="hljs-comment">// 1.创建命令 initWithSignalBlock:(RACSignal * (^)(id input))signalBlock</span>
+    <span class="hljs-comment">// 2.在signalBlock中，创建RACSignal，并且作为signalBlock的返回值</span>
+    <span class="hljs-comment">// 3.执行命令 - (RACSignal *)execute:(id)input</span>
+
+    <span class="hljs-comment">// 二、RACCommand使用注意:</span>
+    <span class="hljs-comment">// 1.signalBlock必须要返回一个信号，不能传nil.</span>
+    <span class="hljs-comment">// 2.如果不想要传递信号，直接创建空的信号[RACSignal empty];</span>
+    <span class="hljs-comment">// 3.RACCommand中信号如果数据传递完，必须调用[subscriber sendCompleted]，这时命令才会执行完毕，否则永远处于执行中。</span>
+
+    <span class="hljs-comment">// 三、RACCommand设计思想：内部signalBlock为什么要返回一个信号，这个信号有什么用。</span>
+    <span class="hljs-comment">// 1.在RAC开发中，通常会把网络请求封装到RACCommand，直接执行某个RACCommand就能发送请求。</span>
+    <span class="hljs-comment">// 2.当RACCommand内部请求到数据的时候，需要把请求的数据传递给外界，这时候就需要通过signalBlock返回的信号传递了。</span>
+
+    <span class="hljs-comment">// 四、如何拿到RACCommand中返回信号发出的数据。</span>
+    <span class="hljs-comment">// 1.RACCommand有个执行信号源executionSignals，这个是signal of signals(信号的信号),意思是信号发出的数据是信号，不是普通的类型。</span>
+    <span class="hljs-comment">// 2.订阅executionSignals就能拿到RACCommand中返回的信号，然后订阅signalBlock返回的信号，就能获取发出的值。</span>
+
+    <span class="hljs-comment">// 五、监听当前命令是否正在执行executing</span>
+
+    <span class="hljs-comment">// 六、使用场景,监听按钮点击，网络请求</span>
+
+
+    <span class="hljs-comment">// 1.创建命令</span>
+    RACCommand *command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(<span class="hljs-keyword">id</span> input) {
+
+
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"执行命令"</span>);
+
+        <span class="hljs-comment">// 创建空信号,必须返回信号</span>
+        <span class="hljs-comment">//        return [RACSignal empty];</span>
+
+        <span class="hljs-comment">// 2.创建信号,用来传递数据</span>
+        <span class="hljs-keyword">return</span> [RACSignal createSignal:^RACDisposable *(<span class="hljs-keyword">id</span>&lt;RACSubscriber&gt; subscriber) {
+
+            [subscriber sendNext:<span class="hljs-string">@"请求数据"</span>];
+
+            <span class="hljs-comment">// 注意：数据传递完，最好调用sendCompleted，这时命令才执行完毕。</span>
+            [subscriber sendCompleted];
+
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>;
+        }];
+
+    }];
+
+    <span class="hljs-comment">// 强引用命令，不要被销毁，否则接收不到数据</span>
+    _conmmand = command;
+
+
+    <span class="hljs-comment">// 3.执行命令</span>
+    [<span class="hljs-keyword">self</span><span class="hljs-variable">.conmmand</span> execute:@<span class="hljs-number">1</span>];
+
+    <span class="hljs-comment">// 4.订阅RACCommand中的信号</span>
+    [command<span class="hljs-variable">.executionSignals</span> subscribeNext:^(<span class="hljs-keyword">id</span> x) {
+
+        [x subscribeNext:^(<span class="hljs-keyword">id</span> x) {
+
+            <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"%@"</span>,x);
+        }];
+
+    }];
+
+    <span class="hljs-comment">// RAC高级用法</span>
+    <span class="hljs-comment">// switchToLatest:用于signal of signals，获取signal of signals发出的最新信号,也就是可以直接拿到RACCommand中的信号</span>
+    [command<span class="hljs-variable">.executionSignals</span><span class="hljs-variable">.switchToLatest</span> subscribeNext:^(<span class="hljs-keyword">id</span> x) {
+
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"%@"</span>,x);
+    }];
+
+    <span class="hljs-comment">// 5.监听命令是否执行完毕,默认会来一次，可以直接跳过，skip表示跳过第一次信号。</span>
+    [[command<span class="hljs-variable">.executing</span> skip:<span class="hljs-number">1</span>] subscribeNext:^(<span class="hljs-keyword">id</span> x) {
+
+        <span class="hljs-keyword">if</span> ([x boolValue] == <span class="hljs-literal">YES</span>) {
+            <span class="hljs-comment">// 正在执行</span>
+            <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"正在执行"</span>);
+
+        }<span class="hljs-keyword">else</span>{
+            <span class="hljs-comment">// 执行完成</span>
+            <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@"执行完成"</span>);
+        }
+
+    }];
+</code></pre>
+<p><code>RACScheduler</code>:RAC中的队列，用GCD封装的。</p>
+<p><code>RACUnit</code> :表⽰stream不包含有意义的值,也就是看到这个，可以直接理解为nil.</p>
+<p><code>RACEvent</code>: 把数据包装成信号事件(signal event)。它主要通过RACSignal的-materialize来使用，然并卵。</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../ios_code/Runtime.html" class="navigation navigation-prev " aria-label="Previous page: IOS Runtime"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../ios_code/ii_reactivecocoa_racff09_bian_cheng_si_xiang_he_mv.html" class="navigation navigation-next " aria-label="Next page: IOS (2)  ReactiveCocoa（RAC）编程思想和MVVM架构进阶"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
