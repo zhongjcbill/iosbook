@@ -15,7 +15,16 @@
 *	使用`消息机制`前提，必须导入#import <objc/message.h>
 *	消息机制简单使用
 
-```
+
+##为什么要用runtime
+####需要用到runtime,消息机制
+- 1.装逼
+- 2.不得不用runtime消息机制,可以帮我调用私有方法.
+
+- 开启代码提示
+![](../images/ios/runtime.png)
+
+```objc
  	// 创建person对象
     Person *p = [[Person alloc] init];
 
@@ -35,11 +44,18 @@
     // 本质：让类对象发送消息
     objc_msgSend([Person class], @selector(eat));
 
+   //调用类方法 objc_msgSend(objc_getClass("Person"), sel_registerName("eat"));
+
+   //    [p performSelector:@selector(run:) withObject:@10];
+调用方法带参数
+
 ```
 * 消息机制原理:对象根据方法编号SEL去映射表查找对应的方法实现
 	*	![](../images/ios/Snip20151013_4.png)
 
 ####2.交换方法
+- 一般交换方法写在load里面
+
 *	开发使用场景:系统自带的方法功能不够，给系统自带的方法扩展一些功能，并且保持原有的功能。
 *	方式一:继承系统的类，重写方法.
 *	方式二:使用runtime,交换方法.
@@ -77,6 +93,7 @@
     // 交换方法地址，相当于交换实现方式
     method_exchangeImplementations(imageWithName, imageName);
 
+    //如果交换方法(imageNamed:)是类方法，就用class_getClassMethod，如果交换的方法是实例方法，那么就用class_getInstanceMethod
 
 }
 
@@ -100,6 +117,7 @@
 @end
 ```
 
+
 * 交换原理：
 	* 交换之前：
 	![](../images/ios/Snip20151013_2.png)
@@ -108,7 +126,12 @@
 * 交换之后：
 	![](../images/ios/Snip20151013_3.png)
 
-
+ ## 方法调用流程
+#### 怎么去调用eat方法 ,对象方法:类对象的方法列表 类方法:元类中方法列表
+- 1.通过isa去对应的类中查找
+- 2.注册方法编号
+- 3.根据方法编号去查找对应方法
+- 4.找到只是最终函数实现地址,根据地址去方法区调用对应函数
 
 ####3.动态添加方法
 * 开发使用场景：如果一个类方法非常多，加载类到内存的时候也比较耗费资源，需要给每个方法生成映射表，可以使用动态给某个类，添加方法解决。
@@ -209,10 +232,9 @@ static const char *key = "name";
 }
 
 @end
-
-
 ```
 
+![](../images/ios/runtime2.png)
 
 ####5.字典转模型
 * 设计模型：字典转模型的第一步
