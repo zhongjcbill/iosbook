@@ -109,7 +109,7 @@
     * [Swift 类的构造函数](Swift/类的构造函数.md)
     * [Swift 闭包](Swift/闭包.md)
     * [Swift 处理异常的方法](Swift/处理异常的方法.md)
-    * [Swift 便利构造函数\(相当于分类\)](Swift/便利构造函数(相当于分类)
+    * [Swift 便利构造函数\(相当于分类\)](便利构造函数-相当于分类.md)
     * [Swift swift类方法](Swift/swift类方法.md)
     * [Swift swift时间监听](Swift/swift时间监听.md)
 * [IOS Swift微博](Swift微博/swift微博.md)
